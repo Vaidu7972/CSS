@@ -13,9 +13,9 @@ button {color:blueviolet;}
 
 /* 2.  BACKGROUND  */
 
-body {background-color: bisque; }
+body {background-color: rgb(229, 227, 224); }
 
-button { background-color:green;}
+button { background-color:rgb(17, 82, 17);}
 
 
 
@@ -24,7 +24,7 @@ button { background-color:green;}
  1. RGB    rgb(255,255,255)  
    search on goggle: colour picker they give exact rgb value of colour. */
 
-h2 {color : rgb(255,0,255) }
+h2 {color : rgb(231, 225, 231) }
 
 /* 2. Hex (hexadecimal 
   binary=01110100
