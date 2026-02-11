@@ -2,3 +2,38 @@
     here we made css file inside the html file*/
 
 /* COLOR PROPERTY
+ 1. FOREGROUND (foreground means front text) 
+color: red,pink,green,blue*/
+
+h1 { color:blue; }     
+
+p {color:red;}
+
+button {color:blueviolet;}
+
+/* 2.  BACKGROUND  */
+
+body {background-color: bisque; }
+
+button { background-color:green;}
+
+
+
+/*Colour System- (use for both foreground & background)
+
+ 1. RGB    rgb(255,255,255)  
+   search on goggle: colour picker they give exact rgb value of colour. */
+
+h2 {color : rgb(255,0,255) }
+
+/* 2. Hex (hexadecimal 
+  binary=01110100
+  decimal= 1 to 9
+  hexadecimal=0 to 15 or a to f 
+  1st two figit for red, 2nd two for green, then last for blue*/
+
+h3 { color: #ff0000;} 
+h4 { color: #00ff00;}
+h5 { color: #0000ff;}
+h6 { color: #ffffff}
+    
