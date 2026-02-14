@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset ="UTF-8">
-        <title>Admin Dashboard</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-             body {
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
             background-color: #f4f6f9;
         }
+
         .sidebar {
             height: 100vh;
             background-color: #212529;
@@ -29,10 +31,46 @@
         .card {
             border-radius: 10px;
         }
-        </style>
-    </head>
-    <body>
-        <div class="container-fluid">
+
+        .chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 300px;
+    border-left: 3px solid #333;
+    border-bottom: 3px solid #333;
+    padding: 20px;
+}
+
+.bar {
+    width: 50px;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    font-weight: bold;
+}
+
+.bar span {
+    position: absolute;
+    top: -25px;
+}
+
+/* Different Colors */
+.bar1 { background: #0d6efd; }   /* Blue */
+.bar2 { background: #198754; }   /* Green */
+.bar3 { background: #ffc107; }   /* Yellow */
+.bar4 { background: #dc3545; }   /* Red */
+.bar5 { background: #6f42c1; }   /* Purple */
+
+    </style>
+</head>
+
+<body>
+
+<div class="container-fluid">
     <div class="row">
 
         <!-- Sidebar -->
@@ -45,6 +83,7 @@
             <a href="#">Settings</a>
             <a href="#">Logout</a>
         </div>
+
         <!-- Main Content -->
         <div class="col-md-10">
 
@@ -98,10 +137,24 @@
                 </div>
             </div>
 
+            <!-- Colorful Histogram -->
+<div class="container mt-5">
+    <div class="card shadow-sm p-4">
+        <h5 class="mb-4">Student Performance Graph</h5>
+
+        <div class="chart">
+            <div class="bar bar1" style="height:70px;"><span>20</span></div>
+            <div class="bar bar2" style="height:130px;"><span>45</span></div>
+            <div class="bar bar3" style="height:200px;"><span>75</span></div>
+            <div class="bar bar4" style="height:240px;"><span>90</span></div>
+            <div class="bar bar5" style="height:160px;"><span>60</span></div>
         </div>
     </div>
 </div>
 
 
-    </body>
+    </div>
+</div>
+
+</body>
 </html>
